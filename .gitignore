@@ -1,0 +1,13 @@
+# Claude Code debug and history
+.claude/debug/
+.claude/file-history/
+.claude/history.jsonl
+.claude/projects/
+.claude/shell-snapshots/
+.claude/plugins/
+
+# Local settings
+.claude/settings.local.json
+
+# Submodules
+.claude/plugins/marketplaces/

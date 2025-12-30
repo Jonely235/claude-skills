@@ -1,0 +1,12 @@
+{
+  "env": {
+    "ANTHROPIC_AUTH_TOKEN": "49dc0690be9d4e848eb061db7213b1d1.ClYeD6dNciVMIbpM",
+    "ANTHROPIC_BASE_URL": "https://api.z.ai/api/anthropic",
+    "API_TIMEOUT_MS": "3000000",
+    "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": 1
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "powershell.exe -NoProfile -Command \"$input = $input | ConvertFrom-Json; $model = $input.model.display_name; $dir = Split-Path -Leaf $input.workspace.current_dir; $style = if ($input.output_style.name -ne 'default') { \"[$($input.output_style.name)]\" } else { '' }; Write-Host \\\"$model in $dir $style\\\" -NoNewline\""
+  }
+}
